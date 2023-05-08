@@ -1,0 +1,80 @@
+﻿<Window x:Class="CryptoContainer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CryptoContainer"
+        mc:Ignorable="d"
+        Title="CryptoEmcee" Height="450" Width="800" Background="#FF300629" BorderBrush="#FF4B0808" FontSize="36" FontFamily="Arial Black">
+    <Grid RenderTransformOrigin="0.496,0.501">
+        <Label 
+            x:Name="lable_hello" 
+            Content="Enter your login and password" 
+            HorizontalAlignment="Center" Margin="0,10,0,0" 
+            VerticalAlignment="Top"/>
+        <Label 
+            x:Name="lable_login" 
+            Content="Login:" 
+            HorizontalAlignment="Left" 
+            Margin="93,108,0,0" 
+            VerticalAlignment="Top"/>
+        <Label 
+            x:Name="lable_password" 
+            Content="Password:" 
+            HorizontalAlignment="Left" 
+            Margin="52,0,0,0" 
+            VerticalAlignment="Center"/>
+        <TextBox x:Name="text_box_login" 
+                 HorizontalAlignment="Left" 
+                 Margin="280,116,0,0" 
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top" 
+                 Width="472" 
+                 Background="#FF3B0F41" 
+                 FontFamily="Arial Black" 
+                 BorderBrush="#FFC91212" 
+                 Cursor="IBeam" 
+                 MaxLength="16" 
+                 SelectionBrush="#FF300629" 
+                 SelectionTextBrush="{x:Null}"/>
+        <TextBox 
+            x:Name="text_box_pass" 
+            HorizontalAlignment="Left"
+            Margin="280,0,0,0" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Center" 
+            Width="472" 
+            Background="#FF3B0F41" 
+            FontFamily="Arial Black" 
+            BorderBrush="#FFC91212" 
+            Cursor="IBeam" 
+            MaxLength="16"/>
+        <Label 
+            x:Name="lable_new_profile" 
+            Content="Profile:" 
+            HorizontalAlignment="Left" 
+            Margin="89,316,0,0" 
+            VerticalAlignment="Top"/>
+        <Button 
+            x:Name="button_create"
+            Content="Create"
+            HorizontalAlignment="Left" 
+            Margin="316,319,0,0" 
+            VerticalAlignment="Top" 
+            BorderBrush="{x:Null}"
+            Background="{x:Null}"
+            Foreground="Black"
+            Click="button_create_Click"/>
+        <Button 
+            x:Name="button_continue" 
+            Content="Continue"
+            HorizontalAlignment="Left"
+            Margin="523,319,0,0"
+            VerticalAlignment="Top"
+            Background="{x:Null}" 
+            BorderBrush="{x:Null}" Click="button_continue_Click"/>
+        <Frame
+            x:Name="Frame" NavigationUIVisibility="Hidden"/>
+
+    </Grid>
+</Window>

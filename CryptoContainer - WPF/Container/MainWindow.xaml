@@ -1,0 +1,91 @@
+﻿<Window x:Class="ILyaContainer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ILyaContainer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FF4A4848">
+        
+        <Label 
+            x:Name="lable_file_path" 
+            Content="File path" 
+            HorizontalAlignment="Left" 
+            Margin="10,10,0,0" 
+            VerticalAlignment="Top" 
+            Background="{x:Null}" 
+            FontSize="36" 
+            FontFamily="Bauhaus 93" 
+            Height="61" 
+            RenderTransformOrigin="1.426,5.185"/>
+        <TextBox 
+            x:Name="textbox_path" 
+            HorizontalAlignment="Left" 
+            Margin="10,72,0,0" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="604" 
+            FontSize="36" 
+            Height="57" 
+            FontFamily="Bauhaus 93" />
+        <Button 
+            x:Name="button_browse" 
+            Content="Browse"
+            HorizontalAlignment="Left"
+            Margin="641,72,0,0"
+            VerticalAlignment="Top"
+            FontSize="36" 
+            Width="131"
+            Background="#FFDDDDDD" 
+            FontFamily="Bauhaus 93" 
+            Click="button_browse_Click"/>
+        <RadioButton
+            x:Name="ratio_button_Encrypt" 
+            Content="Encrypt"
+            HorizontalAlignment="Left"
+            Margin="10,165,0,0"
+            VerticalAlignment="Top" 
+            FontSize="36" 
+            FontFamily="Bauhaus 93" ></RadioButton>
+        <RadioButton 
+            x:Name="ratio_button_decrypt" 
+            Content="Decrypt" 
+            HorizontalAlignment="Left" 
+            Margin="197,165,0,0" 
+            VerticalAlignment="Top" 
+            FontSize="36" FontFamily="Bauhaus 93" ></RadioButton>
+        <Label 
+            x:Name="lable_password"
+            Content="Password:" 
+            HorizontalAlignment="Left" 
+            Margin="10,239,0,0" 
+            VerticalAlignment="Top" 
+            Background="{x:Null}" 
+            FontSize="36" 
+            FontFamily="Bauhaus 93" 
+            Height="61" 
+            RenderTransformOrigin="1.426,5.185"/>
+        <TextBox 
+            x:Name="textbox_password" 
+            HorizontalAlignment="Left" 
+            Margin="187,241,0,0"
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="585" 
+            FontSize="36" 
+            Height="57" 
+            FontFamily="Bauhaus 93"/>
+        <Button 
+            x:Name="button_start" 
+            Content="Start" 
+            HorizontalAlignment="Center" 
+            Margin="0,342,0,0" 
+            VerticalAlignment="Top" 
+            FontSize="36" Width="116" 
+            Background="#FFDDDDDD" 
+            FontFamily="Bauhaus 93" 
+            Click="button_start_Click"/>
+        <Frame x:Name="Frame" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>
